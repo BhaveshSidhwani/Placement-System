@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ResumeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/resume_filename_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_file_selected_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload_resume_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_resume_text"/>
+
+    <TextView
+        android:id="@+id/jd_filename_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_file_selected_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload_job_description_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_job_description_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_resume_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_resume_text"/>
+
+</LinearLayout>

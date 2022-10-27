@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="32dp"
+    tools:context=".ui.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="32dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="Hello abc!"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:drawableTopCompat="@drawable/ic_account_circle"
+            android:background="#00000000"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_quants"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/quants_text"
+                android:drawableTop="@drawable/ic_quants"
+                android:drawablePadding="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_logical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/logical_text"
+                android:drawableTop="@drawable/ic_logical"
+                android:drawablePadding="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_verbal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/verbal_text"
+                android:drawableTop="@drawable/ic_verbal"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_technical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/technical_text"
+                android:drawableTop="@drawable/ic_technical"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="4dp"/>
+        </GridLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_company_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/company_list_text"
+                android:drawableTop="@drawable/ic_enterprise"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_predict_probability"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/predict_probability_text"
+                android:drawableTop="@drawable/ic_probability"
+                android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_resume_scorer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="@string/score_resume_text"
+            android:drawableTop="@drawable/ic_resume"
+            android:layout_margin="8dp"/>
+
+    </GridLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border_dark"
+        android:text="@string/logout_text"
+        android:textColor="@color/white"
+        android:layout_marginVertical="8dp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

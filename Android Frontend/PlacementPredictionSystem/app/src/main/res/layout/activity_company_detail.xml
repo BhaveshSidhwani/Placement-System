@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="32dp"
+    tools:context=".ui.CompanyDetailActivity">
+
+    <EditText
+        android:id="@+id/company_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/company_name_edit_text_hint"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/job_role_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/job_role_edit_text_hint"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/job_description_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top|start"
+        android:hint="@string/job_description_edit_text_hint"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/package_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/package_edit_text_hint"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="#757575" />
+
+    <EditText
+        android:id="@+id/apply_link_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/application_link_text"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="#757575" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_apply_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_text"
+        android:background="@drawable/button_border_dark"
+        android:textColor="@color/white"
+        android:layout_marginVertical="16dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_gravity="end"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_company_text"
+        android:background="@drawable/button_border_dark"
+        android:textColor="@color/white"
+        android:layout_marginVertical="16dp"
+        android:padding="8dp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
